@@ -22,7 +22,7 @@ void UFPA_GeneratePrime(int To, int From=1)
 
 int main()
 {
-    std::cout<<"Enter range of numbers to find prime numbers: ";
+    std::cout<<"Enter start & end range for numbers to find prime in it: ";
     int F,T;
     std::cin>> F >> T;
     UFPA_GeneratePrime(T,F);
