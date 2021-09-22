@@ -26,5 +26,7 @@ int main()
     int F,T;
     std::cin>> F >> T;
     UFPA_GeneratePrime(T,F);
+    std::cin.get();
+    std::cin.get();
     return 0;
 }
