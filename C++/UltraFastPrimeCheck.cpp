@@ -5,12 +5,12 @@
 // UFPA stands for Ultra Fast Prime Assestment.
 // Give credits to the author if, you use this algorithm.
 
-#include<stdio.h>
+#include<iostream>
 #include<math.h>
 
 bool UFPA_isPrime(int N)
 {    
-    //prime assestment hack
+    //Magic hack for fast prime assestment
     if ( (N == 2 || N == 3 || N == 5 || N == 7)  ||  (N%2 != 0 && N%3 != 0 && N%5 != 0 && N%7 != 0 && fmod(sqrt(N),1) != 0 ) )
         return true;
     return false;
@@ -19,12 +19,14 @@ bool UFPA_isPrime(int N)
 int main()
 {
     int n;
-    printf("Enter number: ");
-    scanf("%d", &n);
+    std::cout<<"Enter number: ";
+    std::cin>>n;
 
     if(UFPA_isPrime(n))
-        printf("Prime Number! \n");
+        std::cout<<"Prime Number! \n";
     else
-        printf("Composite number. \n");
+	    std::cout<<"Composite number. \n";
+    std::cin.get();
+    std::cin.get();
     return 0;
 }
