@@ -12,7 +12,7 @@ class FastPrimeCheck
 {
     static boolean UFPA_isPrime(int N)
     {        
-        //Magic hack for fast prime assestment
+        //prime assestment hack
         if ( (N == 2 || N == 3 || N == 5 || N == 7)  ||  (N%2 != 0 && N%3 != 0 && N%5 != 0 && N%7 != 0 && Math.sqrt(N)%1 != 0 ) )
             return true;
         return false;
