@@ -15,7 +15,7 @@ class FastPrimeGenerator
     {        
         for(int i=From; i<To; i++)
         {
-            //Magic hack for ultra fast prime evaluation
+            //prime assestment hack
             if ( (i == 2 || i == 3 || i == 5 || i == 7)  ||  (i%2 != 0 && i%3 != 0 && i%5 != 0 && i%7 != 0 && Math.sqrt(i)%1 != 0 ) )
                 System.out.print(i + " ");
         }
