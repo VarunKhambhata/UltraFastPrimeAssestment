@@ -11,7 +11,12 @@ Time Complexity for this algorithm is:
   
 The value of a number is not a factor in time complexity here. Every number, small or large takes same amount of time and process.
 
-This algorithm is completely accurate upto 100 but going onwards, accuracy starts decreasing linearly resulting in false positives.
+The largest value it can process depends on the datatype of variables used. Using 'int', the largest acceptable value is 2147483647 and for 'short int', the largest acceptable
+value is 32767. 
+
+Since the value is not a factor in time complexity, the calculation will be done in O(1) for even the largest number a 'long long int' can store.
+
+This algorithm is completely accurate upto 100 but going onwards, accuracy starts decreasing linearly; resulting in false positive assestment of number.\
 This algorithm is implementd in C/C++, Java and Python program in this repository.
  <br><br>
 > I would appericiate any suggestions for improving this algorithm to make it even faster and more accurate.
