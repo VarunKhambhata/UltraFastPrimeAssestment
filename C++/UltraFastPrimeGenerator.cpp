@@ -14,7 +14,7 @@ void UFPA_GeneratePrime(int To, int From=1)
 {           
     for(int i=From; i<To;i++)
     {
-        //Magic hack for fast prime assestment
+        //prime assestment hack
         if ( (i == 2 || i == 3 || i == 5 || i == 7)  ||  (i%2 != 0 && i%3 != 0 && i%5 != 0 && i%7 != 0 && fmod(sqrt(i),1) != 0 ) ) 
             std::cout<<i<<" ";            
     }
