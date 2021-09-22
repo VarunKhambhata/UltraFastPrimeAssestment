@@ -27,5 +27,6 @@ class FastPrimeCheck
             System.out.println("Prime Number!");
         else
             System.out.println("Composite Number.");
+        sc.next();
     }
 }
